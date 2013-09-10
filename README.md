@@ -11,14 +11,17 @@ It use  :
 
 ##Installation : 
 Add the **css**, **js** folders in your application.  
-Add css lines : 
-	<link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/notif.css">  
+Add css lines :  
+
+		<link rel="stylesheet" href="css/icons.css">
+       <link rel="stylesheet" href="css/animate.css">
+       <link rel="stylesheet" href="css/notif.css">  
+
+
 Add js lines :  
+
 	<script src="js/mustache.js"></script>
 	<script src="js/notif.min.js"></script>
-
  
 Enjoy !
 
