@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notif</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/notif.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <style>
+            a{
+                background-color: #3498db;
+                padding: 7px 29px;
+                color: #FFF;
+                margin: 20px 0px 0px 20px;
+                display: inline-block;
+                border-radius: 5px;
+                text-decoration: none;
+                box-shadow: 0px 3px 0px 0px #2478B1;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <a href="#" data-cls="info" data-title="New tweet" data-content="You have new tweets" data-icons="icon-twitter">Notif</a>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/mustache.js"></script>
+        <script src="js/notif.min.js"></script>
+		<script>
+			jQuery(function($){
+				$("a").click(function (t) {
+			        t.preventDefault();
+			        $.notif($(this).data());
+			    });
+			})
+		</script>
+    </body>
+</html>
